@@ -264,7 +264,7 @@ var JSHINT = (function() {
 
     if (state.option.devel) {
       // allow custom devel's functions
-      if (state.option.devel == 'object') {
+      if (typeof state.option.devel == 'object') {
         combine(predefined, state.option.devel);
       } else {
         combine(predefined, vars.devel);
